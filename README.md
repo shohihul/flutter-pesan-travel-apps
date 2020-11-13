@@ -1,16 +1,10 @@
-# pesan_travel_apps
+## Gambaran Umum
 
-A new Flutter project.
+Sistem ini terdiri dari 3 user yaitu customer, admin, dan supir. Customer bisa melakukan pemesanan setelah melakukan registrasi akun, setelah melakukan pemesanan customer diharuskan melkakukan pembayaran untuk kemudian bisa memasukkan titik penjemputan dan pengantaran. Setelah itu  admin akan melakukan verifikasi lokasi sesuai yang diinputkan oleh penumpang telah sesuai dengan ketentuan. Kemudian sistem akan menentukan rute dan prioritas penjemputan dan pengantaran penumpang menggunakan metode Ant Colony Optimization. Setelah itu admin akan menerima data tersebut dan akan diteruskan kepada supir yang ditugaskan untuk digunakan dalam melakukan penjemputan dan pengantaran penumpang sesuai rute dan urutan. Admin akan menerima laporan penumpang yang telah dijemput dan diantar. Sistem ini memiliki 2 jenis platform yaitu berbasis web untuk admin dan berbasis aplikasi android untuk supir dan pelanggan.
 
-## Getting Started
+## Repository ini merupakan sistem berbasis aplikasi android untuk supir dan pelangan
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shohihul/flutter-pesan-travel-apps/master/assets/images/ss_home.jpg" width="400">
+  <img src="https://raw.githubusercontent.com/shohihul/flutter-pesan-travel-apps/master/assets/images/ss_scheduled.jpg" width="400">
+</p>
