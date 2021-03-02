@@ -281,55 +281,52 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle.light,
-        child: GestureDetector(
-          onTap: () => FocusScope.of(context).unfocus(),
-          child: Stack(
-            children: <Widget>[
-              Container(
-                height: double.infinity,
-                child: SingleChildScrollView(
-                  physics: AlwaysScrollableScrollPhysics(),
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 40.0,
-                    vertical: 120.0,
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      SvgPicture.asset(
-                        'assets/icons/logo.svg',
-                        width: 250,
-                        ),
-                      SizedBox(height: 80.0),
-                      Text(
-                        'Sign In',
-                        style: TextStyle(
-                          color: secondColor,
-                          fontFamily: 'Montserrat',
-                          fontSize: 25.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      SizedBox(height: 10.0),
-                      _buildErrorMessage(),
-                      SizedBox(height: 10.0),
-                      _buildEmailTF(),
-                      SizedBox(height: 10.0),
-                      _buildPasswordTF(),
-                      _buildForgotPasswordBtn(),
-                      _buildRememberMeCheckbox(),
-                      _buildLoginBtn(),
-                      _buildSignInWithText(),
-                      _buildSocialBtnRow(),
-                      _buildSignupBtn(),
-                    ],
-                  ),
+      body: GestureDetector(
+        onTap: () => FocusScope.of(context).unfocus(),
+        child: Stack(
+          children: <Widget>[
+            Container(
+              height: double.infinity,
+              child: SingleChildScrollView(
+                physics: AlwaysScrollableScrollPhysics(),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 40.0,
+                  vertical: 120.0,
                 ),
-              )
-            ],
-          ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    SvgPicture.asset(
+                      'assets/icons/logo.svg',
+                      width: 250,
+                      ),
+                    SizedBox(height: 80.0),
+                    Text(
+                      'Sign In',
+                      style: TextStyle(
+                        color: secondColor,
+                        fontFamily: 'Montserrat',
+                        fontSize: 25.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 10.0),
+                    _buildErrorMessage(),
+                    SizedBox(height: 10.0),
+                    _buildEmailTF(),
+                    SizedBox(height: 10.0),
+                    _buildPasswordTF(),
+                    _buildForgotPasswordBtn(),
+                    _buildRememberMeCheckbox(),
+                    _buildLoginBtn(),
+                    _buildSignInWithText(),
+                    _buildSocialBtnRow(),
+                    _buildSignupBtn(),
+                  ],
+                ),
+              ),
+            )
+          ],
         ),
       ),
     );

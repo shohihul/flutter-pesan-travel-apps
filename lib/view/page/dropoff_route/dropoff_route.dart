@@ -222,6 +222,8 @@ class _DropoffRouteState extends State<DropoffRoute> {
         status = 'disable';
       else 
         status = 'enable';
+    else if (passenger.status == 'new')
+      status = 'new';
     else
       status = 'done';
 
@@ -293,6 +295,7 @@ class _DropoffRouteState extends State<DropoffRoute> {
                 ),
                 child: Center(
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       (status == 'done') ?
                         Padding(
